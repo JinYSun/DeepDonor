@@ -2,16 +2,14 @@
 
 DeepDonor： Quantum deep field and transfer learning-assisted power conversion efficiency prediction for high-performance donor materials in organic solar cells
 
-<img src="C:\Users\BM109X32G-10GPU-02\AppData\Roaming\Typora\typora-user-images\image-20221024210853768.png" alt="image-20221024210853768" style="zoom:50%;" />
+<img src="J:\DeepDonor\cover.jpg" alt="cover" style="zoom:25%;" />
 
 
 
 # Motivation
 
-The QDF-Donor containing QDF-SM and QDF-P can predict the PCE of small molecule and polymer donor materials separately. 
+The DeepDonor containing QDF-SM and QDF-P can predict the PCE of small molecule and polymer donor materials separately. 
  The small molecule and polymer donor materials  was collected from literature. Atoms and their 3D coordinates were used to represent the molecules after conformer optimization. The QDF-SM was trained on SM dataset. Gaussian-type orbital (GTO) was used to generate atomic basis function, and the molecular orbital was calculated by linear combination of atomic orbitals. The molecular orbital was corrected by computing external potential with a feed-forward DNN. The corrected molecular orbital was used to predict PCE with a DNN. The trained QDF-SM model was used to train the QDF-P on polymer molecule dataset materials by transfer learning with the same process of small molecule materials.
-
-![image-20221024210818430](C:\Users\BM109X32G-10GPU-02\AppData\Roaming\Typora\typora-user-images\image-20221024210818430.png)
 
  # Depends
 
