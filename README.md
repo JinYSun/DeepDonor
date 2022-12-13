@@ -2,7 +2,7 @@
 
 DeepDonor： Quantum deep field and transfer learning-assisted power conversion efficiency prediction for high-performance donor materials in organic solar cells
 
-<img src="J:\DeepDonor\cover.jpg" alt="cover" style="zoom:25%;" />
+<img src="https://github.com/JinYSun/DeepDonor/blob/main/cover.jpg" alt="cover" style="zoom:25%;" />
 
 
 
