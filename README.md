@@ -21,11 +21,11 @@ The DeepDonor containing QDF-SM and QDF-P can predict the PCE of small molecule 
 
 # Discussion
 
-The [Discussion](https://github.com/JinyuSun-csu/QDF-Donor/tree/main/discussion) folder contains the scripts for evaluating the classification performance.  We compared sevaral common methods widely used in drug-likeness prediction, such as [GNN](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/discussion/GNN.py),[RF](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/discussion/RF.py), [ANN](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/discussion/ANN.py),[GB](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/discussion/GB.py).
+The [Discussion](https://github.com/JinYSun/DeepDonor/tree/main/discussion) folder contains the scripts for evaluating the classification performance.  We compared sevaral common methods widely used in drug-likeness prediction, such as [GNN](https://github.com/JinYSun/DeepDonor/blob/main/discussion/GNN.py),[RF](https://github.com/JinYSun/DeepDonor/blob/main/discussion/RF.py), [ANN](https://github.com/JinYSun/DeepDonor/blob/main/discussion/ANN.py),[GB](https://github.com/JinYSun/DeepDonor/blob/main/discussion/GB.py).
 
 # Usage
 
-  If you want to make the prediction of PCE of unknown donor molecule, please put the molecule's SMILES files in to data directory and run [QDF-SM](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/model/QDF_SM.py) for small molecules or [QDF-P](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/model/QDF_P.py) for polymer molecules.
+  If you want to make the prediction of PCE of unknown donor molecule, please put the molecule's SMILES files in to data directory and run [QDF-SM](https://github.com/JinYSun/DeepDonor/blob/main/model/QDF_SM.py) for small molecules or [QDF-P](https://github.com/JinYSun/DeepDonor/blob/main/model/QDF_P.py) for polymer molecules.
   bash SM.sh/PM.sh for training 
   bash predict.sh  for predicting
 
