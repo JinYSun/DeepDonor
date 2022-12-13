@@ -25,7 +25,9 @@ The [Discussion](https://github.com/JinyuSun-csu/QDF-Donor/tree/main/discussion)
 
 # Usage
 
-  If you want to make the prediction of PCE of unknown donor molecule, please put the molecule's SMILES files in to data directory and run [QDF-SM](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/model/QDF_SM.py) for small molecules or [QDF-P](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/model/QDF_P.py).
+  If you want to make the prediction of PCE of unknown donor molecule, please put the molecule's SMILES files in to data directory and run [QDF-SM](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/model/QDF_SM.py) for small molecules or [QDF-P](https://github.com/JinyuSun-csu/QDF-Donor/blob/main/model/QDF_P.py) for polymer molecules.
+  bash SM.sh/PM.sh for training 
+  bash predict.sh  for predicting
 
 # Contact
 
