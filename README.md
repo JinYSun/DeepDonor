@@ -20,6 +20,7 @@ The DeepDonor containing QDF-SM and QDF-P can predict the PCE of small molecule 
 [rdkit](https://rdkit.org/)
 
 By using the environment.yml file, it will install all the required packages.
+
 git clone https://github.com/jinysun/deepdonor.git
 
 cd DeepDonor
