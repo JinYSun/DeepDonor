@@ -1,6 +1,6 @@
 # DeepDonor
 
-DeepDonor： Quantum deep field and transfer learning-assisted power conversion efficiency prediction for high-performance donor materials in organic solar cells
+DeepDonor：Computational discovery of donor materials with high power conversion efficiency for organic solar cells
 
 <img src="https://github.com/JinYSun/DeepDonor/blob/main/cover.jpg" alt="cover" style="zoom:25%;" />
 
@@ -13,11 +13,16 @@ The DeepDonor containing QDF-SM and QDF-P can predict the PCE of small molecule 
 
  # Depends
 
-[Anaconda for python 3.8](https://www.python.org/)
+[Anaconda for python 3.8](https://www.anaconda.com/)
 
-[conda install pytorch](https://pytorch.org/)
+[pytorch](https://pytorch.org/)
 
-[conda install -c conda-forge rdkit](https://rdkit.org/)
+[rdkit](https://rdkit.org/)
+
+git clone https://github.com/jinysun/deepdonor.git
+cd DeepDonor
+conda env create -f environment.yml
+conda activate deepdonor
 
 # Discussion
 
