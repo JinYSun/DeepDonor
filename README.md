@@ -28,7 +28,7 @@ We recommend to use [conda](https://conda.io/docs/user-guide/install/download.ht
 By using the *environment.yml* file, it will install all the required packages.
 
 ```
-`git clone https://github.com/jinysun/deepdonor.git`
+`git clone https://github.com/jinysun/deepdonor.git
 `cd DeepDonor`
 `conda env create -f environment.yml`
 `conda activate deepdonor`
@@ -45,8 +45,8 @@ The [Discussion](https://github.com/JinYSun/DeepDonor/tree/main/discussion) fold
   If you want to make the prediction of PCE of unknown donor molecule, please put the molecule's SMILES files in to data directory and run [QDF-SM](https://github.com/JinYSun/DeepDonor/blob/main/model/QDF_SM.py) for small molecules or [QDF-PM](https://github.com/JinYSun/DeepDonor/blob/main/model/QDF_P.py) for polymer molecules.
 
 ```
-  ``bash SM.sh/PM.sh for training` 
-  `bash predict.sh  for predicting``
+  bash SM.sh/PM.sh for training
+  bash predict.sh  for predicting
 ```
 
 
