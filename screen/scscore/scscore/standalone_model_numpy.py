@@ -105,10 +105,8 @@ class SCScorer():
                 json_str = json_bytes.decode('utf-8')            # 2. string (i.e. JSON)
                 self.vars = json.loads(json_str)
                 self.vars = [np.array(x) for x in self.vars]
-
-
-if __name__ == '__main__':
-    f = pd.read_csv(r"J:\screendonor\genscreennew444sta.csv")
+def screen(filename):
+    f = pd.read_csv(filename)
     file = f.iloc[:,1]
     model = SCScorer()
    # pce = f.iloc[:,2]
@@ -126,4 +124,10 @@ if __name__ == '__main__':
             
 
     fi = pd.DataFrame(smis)
-    fi.to_csv(r"J:\screendonor\genscreennew444sta.csv")
+    fi['label'] = 0
+    fi = fi.reset_index(drop=False)
+    fi.columns = ['substance_id', 'smiles', 'label']
+    fi.to_csv(r"screen3.csv")
+    
+if __name__ == '__main__':
+    screen('screen2.csv')

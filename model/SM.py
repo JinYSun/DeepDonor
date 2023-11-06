@@ -178,6 +178,14 @@ class QuantumDeepField(nn.Module):
                                               self.layer_functional,
                                               self.operation, N_fields)
                 E_ = self.W_property(final_layer)
+                a = []
+                for i in E_:
+                    if i > 18.5:
+                        i = 18.5
+                    else:
+                       i = i
+                    a.append([i])
+                E_ = torch.tensor(a)
                 return idx, E, E_
 
 

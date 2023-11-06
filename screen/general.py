@@ -11,7 +11,7 @@ import pandas as pd
 from rdkit import rdBase, Chem
 from rdkit.Chem import AllChem, Draw, BRICS, Descriptors
 from rdkit.ML.Descriptors import MoleculeDescriptors
-data=pd.read_csv(r'H:\library\QDF-Donor\dataset\P\P.csv',encoding='ISO-8859-1')
+data=pd.read_csv(r'P.csv',encoding='ISO-8859-1')
 data = (data.iloc[:,0])
 
 mols_list=np.array([Chem.MolFromSmiles(mol) for mol in data if mol is not None])
@@ -179,18 +179,7 @@ def structure_generator(main_mol, fragment1, fragment2, r_position=1):
     return generated_molecule
 
 smiles= []
-# for i in range (len(frag_1dummy)) :
-#     main_mol = frag_1dummy[i]
-#     for j in range(len (frag_1dummy)):
-#         fragment2 = frag_1dummy[j]
-#         for k in range (len(frag_2dummy)):
-#             fragment1 = frag_2dummy[k]
-#             mol = structure_generator(fragment2,fragment1,main_mol )
-#             smile = Chem.MolToSmiles(mol)
-#             smiles.append(smile)
-# dic={"SMILES":smiles}
-#DataFrame(dic).to_csv('E:\code\compute/results/Genxyz.csv') 
-          
+   
 for i in range (len(frag_1dummy)) :
     main_mol = frag_1dummy[i]
     for j in range(len (frag_2dummy)):
@@ -202,7 +191,7 @@ for i in range (len(frag_1dummy)) :
             smile = Chem.MolToSmiles(mol)
             smiles.append(smile)
 dic={"SMILES":smiles}
-DataFrame(dic).to_csv('E:\code\compute/results/GenxyzyxPP.csv')
+DataFrame(dic).to_csv('brics.csv')
 
 '''
 main_mol = frag_1dummy[168]

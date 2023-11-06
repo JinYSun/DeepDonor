@@ -116,15 +116,14 @@ def processMols(mols):
     score.append([smiles,s])
     print(smiles+"\t"+ "\t%3f"%s)
   return score
-
-if __name__=='__main__':
+def screen(filename):
   import sys,time
   import pandas as pd
   t1=time.time()
   readFragmentScores("fpscores")
   t2=time.time()
 
-  suppl = Chem.SmilesMolSupplier(r"J:\screendonor\SAscore\data\chemsta.smi")
+  suppl = Chem.SmilesMolSupplier(filename)
   t3=time.time()
   s = processMols(suppl)
   s= pd.DataFrame(s)
@@ -132,7 +131,10 @@ if __name__=='__main__':
 
   print('Reading took %.2f seconds. Calculating took %.2f seconds'%((t2-t1),(t4-t3)), file=sys.stderr)
 
+  s.to_csv('screen2.csv')
   
+if __name__=='__main__':
+    screen('screen1.smi')
 #
 #  Copyright (c) 2013, Novartis Institutes for BioMedical Research Inc.
 #  All rights reserved.
