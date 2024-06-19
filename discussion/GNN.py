@@ -240,13 +240,13 @@ if __name__ == "__main__":
     decay_interval=25
     iteration=500
     N=5000
-    path='H:/qdf/qdf/dataset/transf/'
+    path=r'J:\methods/'
     dataname=''
     device = torch.device('cpu')
     import datetime
     time1=str(datetime.datetime.now())[0:13]
-    dataset_train = pp.create_dataset('train0.txt',path,dataname)
-    dataset_test = pp.create_dataset('test0.txt',path,dataname)
+    dataset_train = pp.create_dataset('train3.txt',path,dataname)
+    dataset_test = pp.create_dataset('pm1.txt',path,dataname)
    # dataset_train, dataset_dev = split_dataset(dataset_train, 0.9)  
     
     lr, lr_decay = map(float, [lr, lr_decay])

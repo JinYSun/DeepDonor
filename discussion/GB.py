@@ -156,8 +156,8 @@ def edit_dataset(drug,non_drug,task):
   #  dataset_dev = dataset_dev_drug+dataset_dev_no
     return dataset_train, dataset_test
 if __name__ == "__main__":
-    data_train= pd.read_csv('H:/qdf/qdf/dataset/transf/train0.csv')
-    data_test=pd.read_csv('H:/qdf/qdf/dataset/transf/test0.csv')
+    data_train= pd.read_csv(r"H:\library\QDF-Donor\dataset\p\train.csv").sample(frac=1).reset_index(drop=True)
+    data_test=pd.read_csv(r"J:\methods\pm1.csv").sample(frac=1).reset_index(drop=True)
     inchis = list(data_train['SMILES'])
     rts = list(data_train['PCE'])
     
